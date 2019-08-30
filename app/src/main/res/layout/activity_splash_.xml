@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:id="@+id/logoimage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mainlogo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoimage"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Food Tracker"
+        android:textColor="#1F6636"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:id="@+id/textView2" />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout
+      android:id="@+id/relativeLayout"
+      android:layout_marginBottom="10dp"
+      android:layout_width="400dp"
+      android:layout_height="450dp"
+      android:background="#FFFFFF">
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" >
+
+          <android.support.v4.view.ViewPager
+              android:id="@+id/pager"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_alignParentTop="true" />
+
+          <com.viewpagerindicator.CirclePageIndicator
+              android:id="@+id/indicator"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:gravity="bottom"
+              android:padding="10dip"
+              app:centered="true"
+              app:fillColor="@color/colorAccent"
+              app:pageColor="#fff"
+              app:snap="false" />
+      </RelativeLayout>
+
+  </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginStart="74dp"
+        android:fontFamily="sans-serif"
+        android:text="LOGIN"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginText"
+        android:layout_alignBottom="@+id/loginText"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="sans-serif"
+        android:text="SIGNUP"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
