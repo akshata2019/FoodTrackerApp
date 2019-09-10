@@ -1,4 +1,4 @@
-package com.example.a40669.foodtrackerapp
+package com.example.a40669.foodtrackerapp.ModelClass
 
 /**
  * Created by 40669 on 8/30/2019.

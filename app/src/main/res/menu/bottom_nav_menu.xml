@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home"/>
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:title="Calender"/>
 
     <item
-        android:id="@+id/nav_fav"
-        android:icon="@drawable/ic_favorite_black_24dp"
-        android:title="Favorite"/>
+        android:id="@+id/nav_goal"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="SetGoal"/>
     <item
-        android:id="@+id/nav_search"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search"/>
+        android:id="@+id/nav_meal"
+        android:icon="@drawable/ic_local_dining_black_24dp"
+        android:title="Meal"/>
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Menu"/>
 
 
 </menu>

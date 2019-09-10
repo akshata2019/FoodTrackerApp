@@ -1,10 +1,9 @@
-package com.example.a40669.foodtrackerapp
+package com.example.a40669.foodtrackerapp.Activity
 
 import android.app.Activity
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
+import com.example.a40669.foodtrackerapp.R
 import kotlinx.android.synthetic.main.activity_login_form.*
 
 class LoginFormActivity : Activity() {
@@ -19,6 +18,10 @@ class LoginFormActivity : Activity() {
         }
         textViewForgot.setOnClickListener {
             val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent);
+        }
+        imageViewBack.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent);
         }
     }

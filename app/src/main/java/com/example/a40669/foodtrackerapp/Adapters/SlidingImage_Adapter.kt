@@ -1,4 +1,4 @@
-package com.example.a40669.foodtrackerapp
+package com.example.a40669.foodtrackerapp.Adapters
 
 import android.content.Context
 import android.os.Parcelable
@@ -8,11 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.a40669.foodtrackerapp.ModelClass.ImageModel
+import com.example.a40669.foodtrackerapp.R
 
 /**
  * Created by 40669 on 8/30/2019.
  */
-class SlidingImage_Adapter(private val context: Context, private val imageModelArrayList: ArrayList<ImageModel>,private val textModelArrayList: ArrayList<ImageModel>) : PagerAdapter() {
+class SlidingImage_Adapter(private val context: Context, private val imageModelArrayList: ArrayList<ImageModel>, private val textModelArrayList: ArrayList<ImageModel>) : PagerAdapter() {
     private val inflater: LayoutInflater
 
 

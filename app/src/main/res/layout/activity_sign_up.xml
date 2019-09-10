@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textViewsignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif"
+        android:text="SignUp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/textViewsignUp">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Male" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textNext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textViewsignUp"
+        android:layout_marginEnd="17dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="Next"
+        android:fontFamily="sans-serif"
+        />
+
+    <EditText
+        android:id="@+id/editTextDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Date Of Birth"
+        android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextDob"
+        android:layout_below="@+id/editTextDob"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/height"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/weight"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinnerheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextHeight"
+        android:layout_alignTop="@+id/editTextHeight"
+        android:layout_marginTop="11dp" />
+
+    <Spinner
+        android:id="@+id/spinnerweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinnerheight"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

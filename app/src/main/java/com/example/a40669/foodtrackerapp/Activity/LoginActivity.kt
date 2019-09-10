@@ -1,11 +1,13 @@
-package com.example.a40669.foodtrackerapp
+package com.example.a40669.foodtrackerapp.Activity
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.view.ViewPager
-import android.support.v7.app.AppCompatActivity
+import com.example.a40669.foodtrackerapp.Adapters.SlidingImage_Adapter
+import com.example.a40669.foodtrackerapp.ModelClass.ImageModel
+import com.example.a40669.foodtrackerapp.R
 import com.viewpagerindicator.CirclePageIndicator
 import kotlinx.android.synthetic.main.activity_login.*
 import java.util.*
@@ -36,6 +38,10 @@ class LoginActivity : Activity() {
             val intent = Intent(this, LoginFormActivity::class.java)
             startActivity(intent);
         }
+        signupText.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent);
+        }
 
         init()
 
@@ -58,7 +64,7 @@ class LoginActivity : Activity() {
     private fun init() {
 
         mPager = findViewById<ViewPager>(R.id.pager) as ViewPager
-        mPager!!.adapter = SlidingImage_Adapter(this@LoginActivity, this.imageModelArrayList!! ,this.textModelArrayList!!)
+        mPager!!.adapter = SlidingImage_Adapter(this@LoginActivity, this.imageModelArrayList!!, this.textModelArrayList!!)
 
 
         val indicator = findViewById<CirclePageIndicator>(R.id.indicator) as CirclePageIndicator
@@ -71,7 +77,7 @@ class LoginActivity : Activity() {
         indicator.setRadius(5 * density)
 
         NUM_PAGES = imageModelArrayList!!.size
-        NUM_PAGES=textModelArrayList!!.size
+        NUM_PAGES =textModelArrayList!!.size
 
         // Auto start of viewpager
         val handler = Handler()
