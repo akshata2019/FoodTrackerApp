@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/app_name"
-        android:gravity="center_vertical|center_horizontal"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="Weight Goal"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"/>
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/roundbutton"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonUpdate"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/buttonMinus"
+        android:layout_alignBottom="@+id/buttonMinus"
+        android:layout_toEndOf="@+id/textView4"
+        android:background="@drawable/roundbutton"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMinus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="Update"
+       android:background="#E8861E"/>
+
+</RelativeLayout>
